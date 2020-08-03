@@ -11,23 +11,26 @@ const UploadForm = () => {
 
         if (selected && types.includes(selected.type)) {
             setFile(selected);
-            etError('');
+            setError('');
         } else {
             setFile(null);
             setError('Please select an image file of png or jped');
         }
-        }
 
-    }
+    };
 
     return (
         <form>
-        <input type="file" onChange={changeHandler} />
+        <label>
+        <input type="file" onChange={ changeHandler } />
+        <span>+</span>
+        </label>
         <div className="oputput">
         { error && <div className="error">{ error }</div> }
+        { file && <div>{ file.name }</div> }
         </div>
         </form>
-    )
+    );
 }
 
 export default UploadForm;
