@@ -21,6 +21,8 @@ useEffect(() => {
         })
     }, [file]);
 
+    return { progress, url, error }
 }
 
+export default useStorage;
      
