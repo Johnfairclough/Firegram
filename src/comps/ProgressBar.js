@@ -2,10 +2,11 @@ import React from 'react';
 import useStorage from '../hooks/useStorage';
 
 const ProgressBar = ({ file, setFile }) => {
-    const { url, progressBar } = useStorage(file);
+    const { url, progress } = useStorage(file);
+    console.log(progress, url);
 
     return (
-        <div className="progress-bar">progress</div>
+        <div className="progress-bar" style={{ width: progress + '%' }}>progress</div>
     )
 }
 
