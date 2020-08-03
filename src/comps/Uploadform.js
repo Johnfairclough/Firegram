@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ProgressBar from './ProgressBar';
 
 const UploadForm = () => {
-    const [file, setFile] = useState(null);
-    const [error, setError] = useState(null);
+  const [file, setFile] = useState(null);
+  const [error, setError] = useState(null);
 
     const types = ['image/png', 'image/jpeg'];
 
