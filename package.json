@@ -2,7 +2,7 @@
   "name": "firegram",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://johnfairclough.github.io/Firegram/",
+  "homepage": "https://johnfairclough.github.io/ImageWall/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
