@@ -4,7 +4,7 @@ const Modal = ({ selectedImg }) => {
 
     return (
         <div className="backdrop">
-        <img src="" alt="Image preview" />
+        <img src="{ selectedImg }" alt="Preview" />
         </div>
     )
 }

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Title from './comps/Title';
 import UploadForm from './comps/Uploadform';
 import ImageGrid from './comps/ImageGrid';
-import Modal from '/comps/Modal';
+import Modal from './comps/Modal';
 
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <Title/>
       <UploadForm />
-      <ImageGrid />
-      <Modal selectedImg={selectedImg} />
+      <ImageGrid setlectedImg={selectedImg} />
+      <Modal setlectedImg={selectedImg} />
     </div>
   );
 }
